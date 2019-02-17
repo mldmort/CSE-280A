@@ -1,0 +1,12 @@
+python3 vntr_builder.py -i core_vntr.dat -o haplotype1.dat -c 3 -l 150
+
+args: Namespace(count=3, input='core_vntr.dat', length=150, output='haplotype1.dat')
+input:  core_vntr.dat
+count:  3
+length:  150
+read length:  150
+random position:  41
+short seq:  GCGCGGGGCGGG
+VNTR seq:  GCGCGGGGCGGGGCGCGGGGCGGGGCGCGGGGCGGG
+VNTR from read:  GCGCGGGGCGGGGCGCGGGGCGGGGCGCGGGGCGGG
+total read:  CGGAAACGAGTATTGTTAACTTATTGGTGCCGCTGGTGGGGGCGCGGGGCGGGGCGCGGGGCGGGGCGCGGGGCGGGTCTGGCCTACCCGCGGGCGGCACAACGCAGAGCCCAACTGTCATTGCATTTTCAATGCCTGCAAGTGTAAGCC
