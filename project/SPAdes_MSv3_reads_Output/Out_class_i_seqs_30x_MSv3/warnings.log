@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:00.748    16M / 3G    WARN    General                 (kmer_coverage_model.cpp   : 218)   Too many erroneous kmers, the estimates might be unreliable
+======= Warnings saved to /Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_i_seqs_30x_MSv3/warnings.log

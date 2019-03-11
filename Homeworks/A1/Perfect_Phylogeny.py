@@ -5,7 +5,12 @@ from methods import *
 
 if __name__ == "__main__":
 
-  fn = 'a1data1.txt'
+  #fn = 'a1data1.txt'
+  #fn = '../A3/recombination_simulation/snp.r.0_mod.dat'
+  #fn = '../A3/recombination_simulation/snp.r.1_mod.dat'
+  #fn = '../A3/recombination_simulation/snp.r.20_mod.dat'
+  #fn = '../A3/recombination_simulation/snp.r.40_mod.dat'
+  fn = '../A3/a3data2.txt'
   #fn = 'a1data2.txt'
   #fn = 'a1data3.txt'
   #fn = 'a1data4.txt'
@@ -37,4 +42,4 @@ if __name__ == "__main__":
   #print snp
 
   outfn = 'output_' + fn
-  np.savetxt(outfn,snp,fmt='%d',delimiter='')
+  #np.savetxt(outfn,snp,fmt='%d',delimiter='')

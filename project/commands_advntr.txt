@@ -1,0 +1,1 @@
+advntr genotype -vid 301645 -a ../../hg19/samples/mapped_20x_150bp_MSv3.sorted.bam -of bed --working_directory ./

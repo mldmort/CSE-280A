@@ -1,0 +1,35 @@
+Command line: spades.py	-s	/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/class_j_seqs_10x_MSv3.fq	-k	59,61,63	--careful	-o	/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_j_seqs_10x_MSv3	
+
+System information:
+  SPAdes version: 3.13.0
+  Python version: 2.7.10
+  OS: Darwin-17.4.0-x86_64-i386-64bit
+
+Output dir: /Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_j_seqs_10x_MSv3
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Multi-cell mode (you should set '--sc' flag if input data was obtained with MDA (single-cell) technology or --meta flag if processing metagenomic dataset)
+  Reads:
+    Library number: 1, library type: single
+      left reads: not specified
+      right reads: not specified
+      interlaced reads: not specified
+      single reads: ['/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/class_j_seqs_10x_MSv3.fq']
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: [59, 61, 63]
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+Other parameters:
+  Dir for temp files: /Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_j_seqs_10x_MSv3/tmp
+  Threads: 16
+  Memory limit (in Gb): 250
+

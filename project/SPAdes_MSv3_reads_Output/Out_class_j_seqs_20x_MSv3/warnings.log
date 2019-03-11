@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:00:00.357    16M / 3G    WARN    General                 (kmer_coverage_model.cpp   : 366)   Failed to determine erroneous kmer threshold. Threshold set to: 3
+======= Warnings saved to /Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_j_seqs_20x_MSv3/warnings.log

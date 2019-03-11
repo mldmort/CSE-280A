@@ -1,0 +1,7 @@
+"bwa": "/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/spades-bwa"
+"dataset": "/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_i_seqs_20x_MSv3/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "16"
+"output_dir": "/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_i_seqs_20x_MSv3/mismatch_corrector/contigs"
+"strategy": "mapped_squared"
+"work_dir": "/Users/sara/Documents/SW/SPAdes-3.13.0-Darwin/bin/Out_class_i_seqs_20x_MSv3/tmp/corrector_VK18Ce"

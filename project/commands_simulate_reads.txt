@@ -1,0 +1,18 @@
+art_illumina -i ../chr_21/chr21_RU_4.fa -ss MSv3 -l 150 -f 30 -o reads_illumina_30x_150bp_RU_4_MSv3
+
+art_illumina -i ../chr_21/chr21_RU_6.fa -ss MSv3 -l 150 -f 30 -o reads_illumina_30x_150bp_RU_6_MSv3
+
+cat reads_illumina_30x_150bp_RU_4_MSv3.fq > reads_illumina_30x_150bp_RU_MIXED_MSv3.fq
+cat reads_illumina_30x_150bp_RU_6_MSv3.fq >> reads_illumina_30x_150bp_RU_MIXED_MSv3.fq
+
+bwa index ../hg19.fa 
+bwa mem ../hg19.fa reads_illumina_30x_150bp_RU_MIXED_MSv3.fq > mapped_30x_150bp_MSv3.sam
+
+samtools view -S -b mapped_30x_150bp_MSv3.sam > mapped_30x_150bp_MSv3.bam
+samtools sort mapped_30x_150bp_MSv3.bam -o mapped_30x_150bp_MSv3.sorted.bam
+samtools index mapped_30x_150bp_MSv3.sorted.bam
+
+
+art_illumina -i ../chr_21/chr21_RU_4_ins_1.fa -ss MSv3 -l 150 -f 20 -o reads_illumina_20x_150bp_RU_4_MSv3_ins_1
+art_illumina -i ../chr_21/chr21_RU_6_del_1.fa -ss MSv3 -l 150 -f 20 -o reads_illumina_20x_150bp_RU_6_MSv3_del_1
+art_illumina -i ../chr_21/chr21_RU_4_swi_1.fa -ss MSv3 -l 150 -f 20 -o reads_illumina_20x_150bp_RU_4_MSv3_swi_1
