@@ -131,18 +131,18 @@ def getCoverage(dic):
   
 
 if __name__ == "__main__":
-  #working_dir = "./"
+  working_dir = "./"
 
-  #fq_files=["class_i_seqs_30x_MSv3.fq","class_i_seqs_20x_MSv3.fq","class_i_seqs_10x_MSv3.fq","class_i_seqs_5x_MSv3.fq",
-  #          "class_j_seqs_30x_MSv3.fq","class_j_seqs_20x_MSv3.fq","class_j_seqs_10x_MSv3.fq","class_j_seqs_5x_MSv3.fq"]
+  fq_files=["class_i_seqs_30x_MSv3.fq","class_i_seqs_20x_MSv3.fq","class_i_seqs_10x_MSv3.fq","class_i_seqs_5x_MSv3.fq",
+            "class_j_seqs_30x_MSv3.fq","class_j_seqs_20x_MSv3.fq","class_j_seqs_10x_MSv3.fq","class_j_seqs_5x_MSv3.fq"]
 
-  #state_files=["class_i_states_30x_MSv3.dat","class_i_states_20x_MSv3.dat","class_i_states_10x_MSv3.dat","class_i_states_5x_MSv3.dat",
-  #             "class_j_states_30x_MSv3.dat","class_j_states_20x_MSv3.dat","class_j_states_10x_MSv3.dat","class_j_states_5x_MSv3.dat"]
+  state_files=["class_i_states_30x_MSv3.dat","class_i_states_20x_MSv3.dat","class_i_states_10x_MSv3.dat","class_i_states_5x_MSv3.dat",
+               "class_j_states_30x_MSv3.dat","class_j_states_20x_MSv3.dat","class_j_states_10x_MSv3.dat","class_j_states_5x_MSv3.dat"]
 
-  #RU_count=[4,4,4,4,6,6,6,6]
+  RU_count=[4,4,4,4,6,6,6,6]
 
-  #labels = ['30x class i','20x class i','10x class i','5x class i',
-  #          '30x class j','20x class j','10x class j','5x class j']
+  labels = ['30x class i','20x class i','10x class i','5x class i',
+            '30x class j','20x class j','10x class j','5x class j']
 
   #fq_files = ["class_i_seqs_20x_MSv3_indel.fq","class_j_seqs_20x_MSv3_indel.fq"]
 
@@ -152,20 +152,20 @@ if __name__ == "__main__":
 
   #state_files = ["class_i_states_20x_MSv3_swidel.dat","class_j_states_20x_MSv3_swidel.dat"]
 
-  working_dir = "/Users/miladmortazavi/Documents/Dev/BIOINF/project/working_dir3/"
+  #working_dir = "/Users/miladmortazavi/Documents/Dev/BIOINF/project/working_dir3/"
 
-  fq_files = ["class_i_seqs_30x_GP1BA.fq", "class_j_seqs_30x_GP1BA.fq"]
+  #fq_files = ["class_i_seqs_30x_GP1BA.fq", "class_j_seqs_30x_GP1BA.fq"]
 
-  state_files = ["class_i_states_30x_GP1BA.dat", "class_j_states_30x_GP1BA.dat"]
+  #state_files = ["class_i_states_30x_GP1BA.dat", "class_j_states_30x_GP1BA.dat"]
 
-  RU_count=[4,6]
+  #RU_count=[4,6]
 
-  labels = ['30x class i','30x class j']
+  #labels = ['30x class i','30x class j']
 
-  #read_length = 150
-  read_length = 250
-  #RU_length = 12
-  RU_length = 39
+  read_length = 150
+  #read_length = 250
+  RU_length = 12
+  #RU_length = 39
 
   for ind, item in enumerate(fq_files):
     fq_files[ind] = working_dir+item
@@ -210,8 +210,8 @@ if __name__ == "__main__":
       record_collection_qual[r_ind][(ind_max-start_list[r_ind]):(ind_max-start_list[r_ind]+read_length)]  = record.letter_annotations['phred_quality']
       #print(str(r_ind)+": \t", record.seq[start_list[r_ind]:start_list[r_ind]+RU_length*i_repeat])
 
-    for r_ind, record_qual in enumerate(record_collection_qual):
-      print(str(r_ind)+": \t",record_qual[9])
+    #for r_ind, record_qual in enumerate(record_collection_qual):
+    #  print(str(r_ind)+": \t",record_qual[9])
 
     for r_ind, record in enumerate(record_collection):
       print(str(r_ind)+": \t", record)
